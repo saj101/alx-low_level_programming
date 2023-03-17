@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
-*main- startting point
-*return 0- program ran successfully
-*/
+ * main - Entry point
+ * Description: 'uses printf to print'
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");

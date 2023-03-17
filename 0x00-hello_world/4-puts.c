@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
-*main-starting point
-*returns 0 of successful
-*/
-int main(void)/*starting point of the program
-*/
+ * main - Entry point
+ * Description: 'uses puts to print'
+ * @parameter: uses puts
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return (0);/* returns o if successfull runs
-*/
+	return (0);
 }
