@@ -2,7 +2,6 @@
 /**
  * main - Entry point
  * Description: 'uses puts to print'
- * @parameter: uses puts
  * Return: Always 0 (Success)
  */
 int main(void)
