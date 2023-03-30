@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *rot13 - encodes a astring using weak encryption
+ *rot13 - encoder rot13
  *@s: pointer to string
  *
  *Return: *s
