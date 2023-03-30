@@ -2,9 +2,9 @@
 
 /**
  *_strncpy -copies a string
- *@dest: input
- *@src: input
- *@n: input 
+ *@dest: input value
+ *@src: input value
+ *@n: input value
  *Return: dest
  */
 
