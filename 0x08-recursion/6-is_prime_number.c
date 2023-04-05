@@ -1,5 +1,5 @@
 #include "main.h"
-int actual_prime_number(int n, int j);
+int actual_prime_number(int n, int i);
 
 /**
  *is_prime_number - returns 1 if integer is prime number
@@ -18,15 +18,15 @@ int is_prime_number(int n)
 /**
  * actual_prime_number - checks if number is prime recursively
  *@n : number
- *@j : iterate
+ *@i : iterate
  *
  * Return: 1 if n is prime, else returns 0
  */
-int actual_prime_number(int n, int j)
+int actual_prime_number(int n, int i)
 {
-	if (j == 1)
+	if (i == 1)
 		return (1);
-	if (n % j == 0 && j > 0)
+	if (n % i == 0 && i > 0)
 		return (0);
-	return (actual_prime_number(n, j - 1));
+	return (actual_prime_number(n, i - 1));
 }
