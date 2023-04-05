@@ -14,7 +14,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- *actual_sqrt_recursion - recurses
+ *_actual_sqrt_recursion - recurses
  *@n: value to calculate square root
  *j:iterator
  * Return: Always 0.
