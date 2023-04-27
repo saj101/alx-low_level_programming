@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "lists.h"
@@ -9,26 +10,27 @@
  *
  * Return: the address of the new element, or NULL if it fails
  */
+
 list_t *add_node(list_t **head, const char *str)
 {
 	if (!head || !str)
 		return (NULL);
-
 	list_t *new_node = malloc(sizeof(list_t));
 
 	if (!new_node)
-	return (NULL);
+		return (NULL);
+	char *new_str = strdup(str);
 
-	new_node->str = strdup(str);
-	if (!new_node->str)
+	if (!new_str)
 	{
 		free(new_node);
 		return (NULL);
 	}
-
+	new_node->str = new_str;
 	new_node->len = strlen(str);
-	new_node->next = *head;
-	*head = new_node;
 
+	new_node->next = *head;
+
+	*head = new_node;
 	return (new_node);
 }
