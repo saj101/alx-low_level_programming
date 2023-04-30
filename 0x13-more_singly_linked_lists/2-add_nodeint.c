@@ -3,14 +3,14 @@
 /**
  *add_nodeint - adds a new node at beginning of list
  *@head: pointer to pointer to head of the list
- *n: integer to be added to the new node
+ *@n: integer to be added to the new node
  *
  *Return: pointer to the new node or NULL if it fails
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new_node;
-	
+
 	if (head == NULL)
 		return (NULL);
 
