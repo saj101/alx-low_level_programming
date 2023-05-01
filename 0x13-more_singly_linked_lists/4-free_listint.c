@@ -2,7 +2,7 @@
 
 /**
  * free_listint - frees a listint_t list
- * @head: pointer to the head of the list
+ * @head: listint_t list to be freed
  */
 void free_listint(listint_t *head)
 {
@@ -10,8 +10,8 @@ void free_listint(listint_t *head)
 
 	while (head != NULL)
 	{
-		temp = head;
-		head = head->next;
-		free(temp);
+		temp = head->next
+		free(head);
+		head = temp;
 	}
 }
